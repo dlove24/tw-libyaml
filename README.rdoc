@@ -1,0 +1,64 @@
+= TapeWorm Fork of the libYAML Library by Kirill Simonov
+
+This repository is, essentially, the same as the upstream C libYAML
+library, hosted at http://pyyaml.org/wiki/LibYAML. The intention is
+to keep this library as close as possible to the upstream version,
+adding tweaks only where needed by TapeWorm. Most of these tweaks
+improve the portability of certain files, by integrating into the CMake
+based build system of Tapeworm.
+
+Our version of the C YAML library is not intended as a stand-alone
+library (unlike the excellent foundations). If you want a stand-alone
+version go to the original source. This version exists principally to
+make it easier to re-use the work done on libYAML within Tapeworm. 
+
+== Original README
+
+LibYAML - A C library for parsing and emitting YAML.
+
+To build and install the library, run:
+$ ./configure
+$ make
+# make install
+
+If you checked the source code from the Subversion repository, run
+$ ./bootstrap
+$ ./configure
+$ make
+# make install
+
+For more information, check the LibYAML homepage:
+'http://pyyaml.org/wiki/LibYAML'.
+
+Post your questions and opinions to the YAML-Core mailing list:
+'http://lists.sourceforge.net/lists/listinfo/yaml-core'.
+
+Submit bug reports and feature requests to the LibYAML bug tracker:
+'http://pyyaml.org/newticket?component=libyaml'.
+
+LibYAML is written by Kirill Simonov <xi@resolvent.net>.  It is released
+under the MIT license.  See the file LICENSE for more details.
+
+This project is developed for Python Software Foundation as a part of
+Google Summer of Code under the mentorship of Clark Evans.
+
+== Updating
+
+Updates to this library should be pulled from the upstream libYAML
+Subversion repository. With `git-svn` you should be able to do
+
+  git-svn fetch
+
+to get the latest version of the upstream code. You may need to do
+
+  git-svn init http://svn.pyyaml.org/libyaml/branches/stable
+
+if Git has forgotten where the repository is.
+
+== Copyright
+
+Copyright (c) 2006-2011, Kirill Simonov
+Copyright (c) 2011 David Love. 
+
+See LICENSE for further details.
+
