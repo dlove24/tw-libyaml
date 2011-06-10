@@ -15,6 +15,9 @@
 extern "C" {
 #endif
 
+/* Link to the global configure header */
+#include "config.h"
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
