@@ -106,6 +106,11 @@ add_library( tw_yaml SHARED
 # Disable warnings about unused return values in the YAML library
 set_property( TARGET tw_yaml PROPERTY COMPILE_FLAGS -Wno-unused-value )
 
+# Install the YAML library headers
+install( DIRECTORY include/yaml DESTINATION include
+  FILES_MATCHING PATTERN "*.h"
+  )
+
 # Install the YAML library
 install ( TARGETS tw_yaml
   LIBRARY DESTINATION lib
